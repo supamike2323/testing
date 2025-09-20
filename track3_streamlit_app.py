@@ -30,9 +30,6 @@ def main() -> None:
             st.stop()
     else:
         df = load_sample_data()
-        st.info(
-            "Using a synthetic cohort. Upload your own CSV with similar columns to evaluate your unit's data."
-        )
 
     render_patient_census(df)
     st.write("---")
